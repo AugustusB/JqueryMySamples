@@ -7,16 +7,6 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Launch Chrome",
-            "url": "http://localhost:9080",
-            "webRoot": "${workspaceRoot}", 
-            "skipFiles": [
-                "jquery-2.1.1.js"
-            ]
-        },
-        {
-            "type": "chrome",
-            "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:9080",
             "file": "${workspaceRoot}/example1.html",
