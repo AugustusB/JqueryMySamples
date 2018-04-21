@@ -1,11 +1,13 @@
 
 #myContent {
-    background-color: #6D9737;
+    background-color: Navy; 
+    color:White;
 }
 
 .BlueDiv { 
     background-color: Navy; 
-    color:White;width:200px;
+    color:White;
+    width:200px;
 }
 
 .RedDiv { 
