@@ -17,6 +17,11 @@
             ex1.selectInput('input[type="text"');
             ex1.selectAllInputs(':input');
             ex1.selectByContains('div:contains("my")');  
+            ex1.selectTrOddEven('#DataTable1 tr:even');
+            //ex1.selectTrOddEven('tr:first-child');
+            ex1.selectEndStart('div[title^="Div"]');
+            ex1.selectEndStart('div[title$="Table"]');
+            ex1.selectEndStart('div[id*="myContent"]');
         });
 
     </script>
@@ -64,7 +69,7 @@
     </p>
 
     <form id="form1">
-        <table style="width:300px;">
+        <table style="width:300px;" id="DataTable1">
             <tr>
                 <td style="width:30%;">First Name</td>
                 <td style="width:70%;"><input id="FirstNameTextBox" value="John" type="text" /></td>

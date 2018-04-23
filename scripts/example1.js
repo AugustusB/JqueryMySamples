@@ -31,6 +31,14 @@
             $(contians).each(function (){
                 $(this).html("changed by contains selector");
             });
+        },
+
+        selectTrOddEven = function selectTrOddEven(sel){
+            $(sel).css('background-color', 'Green');
+        },
+
+        selectEndStart = function selectEndStart(endStartWith){
+            alert($(endStartWith).html());
         };
     
         //public members 
@@ -39,7 +47,9 @@
             selectByAttribute: selectByAttribute,
             selectInput: selectInput,
             selectAllInputs: selectAllInputs,
-            selectByContains: selectByContains
+            selectByContains: selectByContains,
+            selectTrOddEven: selectTrOddEven,
+            selectEndStart: selectEndStart
         };
     };
 
