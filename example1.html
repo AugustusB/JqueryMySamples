@@ -7,9 +7,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="scripts\example1.css">
     <script type="text/javascript" src="..\jquery-2.1.1.js"></script>
+    <!-- <script src="scripts\Ex1.js"></script> -->
     <script src="scripts\example1.js"></script>
-    
-</head>
+    <script>
+        $(function(){
+            var ex1 = new Gus.ExJq.Ex1();
+            ex1.selectById('myContent');
+            ex1.selectByAttribute('td[style="width:30%;"],td[style="width:70%;"]');
+            ex1.selectInput('input[type="text"');
+            ex1.selectAllInputs(':input');
+            ex1.selectByContains('div:contains("my")');  
+        });
+
+    </script>
+
 <body>
     <div id ='myContent'>hi</div>
 
